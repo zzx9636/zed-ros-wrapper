@@ -159,5 +159,5 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             - 'image_transport/theora'
         </rosparam>
     </group>
-    
+
 </launch>
