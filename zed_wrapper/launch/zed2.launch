@@ -52,4 +52,112 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <arg name="cam_yaw"             value="$(arg cam_yaw)" />
         </include>
     </group>
+
+    <!-- Disable image transport plugin-->
+    <group ns="$(arg camera_name)/zed_node/left/image_rect_color" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/right/image_rect_color" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/left/image_rect_gray" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/right/image_rect_gray" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/left_raw/image_raw_color" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/right_raw/image_raw_color" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/left_raw/image_raw_gray" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/right_raw/image_raw_gray" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/rgb/image_rect_color" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/rgb/image_rect_gray" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/rgb_raw/image_raw_color" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/rgb_raw/image_raw_gray" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/stereo/image_rect_color" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node/stereo_raw/image_raw_color" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    <group ns="$(arg camera_name)/zed_node//depth/depth_registered" >
+        <rosparam param="disable_pub_plugins">
+            - 'image_transport/compressedDepth'
+            - 'image_transport/compressed'
+            - 'image_transport/theora'
+        </rosparam>
+    </group>
+    
 </launch>
