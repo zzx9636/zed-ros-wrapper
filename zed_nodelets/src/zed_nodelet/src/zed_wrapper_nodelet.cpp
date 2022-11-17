@@ -230,7 +230,7 @@ void ZEDWrapperNodelet::onInit()
         }
     }
 
-    mZedParams.coordinate_system = sl::COORDINATE_SYSTEM::RIGHT_HANDED_Z_UP_X_FWD;
+    mZedParams.coordinate_system = sl::COORDINATE_SYSTEM::IMAGE;
     NODELET_INFO_STREAM(" * Camera coordinate system\t-> " << sl::toString(mZedParams.coordinate_system));
 
     mZedParams.coordinate_units = sl::UNIT::METER;
